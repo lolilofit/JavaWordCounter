@@ -21,6 +21,7 @@ public class Main {
       WordCount words_stat = new WordCount(_pars, _write);
       words_stat.count_words();
       writer.close();
+      reader.close();
     }
 
 }
