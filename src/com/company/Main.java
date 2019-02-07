@@ -15,22 +15,7 @@ public class Main {
         {
             System.err.println("Can't open csv-file" + e.getLocalizedMessage());
         }
-        finally
-        { /*
-            if (null != reader)
-            {
-                try
-                {
-                   reader.close();
-                   writer.close();
-                }
-                catch (IOException e)
-                {
-                    e.printStackTrace(System.err);
-                }
-            }
-            */
-        }
+
       Parser _pars = new Parser(reader);
       WordWriter _write = new WordWriter(writer);
       WordCount words_stat = new WordCount(_pars, _write);
