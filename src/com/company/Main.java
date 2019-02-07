@@ -20,7 +20,9 @@ public class Main {
       WordWriter _write = new WordWriter(writer);
       WordCount words_stat = new WordCount(_pars, _write);
       words_stat.count_words();
+      if(writer != null)
       writer.close();
+      if(reader != null)
       reader.close();
     }
 
