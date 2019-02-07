@@ -27,8 +27,7 @@ public class WordWriter {
         for(Map.Entry<String, Integer> ent : res.entrySet()) {
             out.write(ent.getKey());
             out.write(" , ");
-            Integer value = new Integer((ent.getValue())*100);
-            out.write(value.toString());
+            out.write(ent.getValue().toString());
             out.write(" , ");
             Double val = new Double((ent.getValue()*100)/count);
             out.write(val.toString());
